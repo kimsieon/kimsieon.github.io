@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Picture Gallery</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .gallery-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 5px;
+      }
+
+      .image-container {
+        flex-basis: calc(50% - 10px); /* 각 컨테이너가 차지하는 폭 */
+        margin: 5px;
+        box-sizing: border-box;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        border: 5px solid black;
+      }
+
+      @media (max-width: 600px) {
+        .image-container {
+          flex-basis: 100%; /* 작은 화면에서는 한 줄에 하나의 이미지 */
+        }
+      }
+    </style>
+  </head>
+  <body style="background-color: #222; color: #eee">
+    <h1 style="text-align: center">그림</h1>
+    <div class="gallery-container">
+      <!-- 각 이미지 컨테이너 -->
+      <div class="image-container">
+        <img src="picture1.jpeg" alt="picture1" />
+      </div>
+      <div class="image-container">
+        <img src="picture2.jpeg" alt="picture2" />
+      </div>
+      <div class="image-container">
+        <img src="picture3.jpeg" alt="picture3" />
+      </div>
+      <div class="image-container">
+        <img src="picture4.jpeg" alt="picture4" />
+      </div>
+    </div>
+  </body>
+</html>

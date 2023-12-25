@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photoshop Gallery</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .gallery-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 5px;
+      }
+
+      .image-container {
+        flex-basis: calc(50% - 10px);
+        margin: 5px;
+        box-sizing: border-box;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        border: 5px solid black;
+      }
+
+      @media (max-width: 600px) {
+        .image-container {
+          flex-basis: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body style="background-color: #222; color: #eee">
+    <h1 style="text-align: center">그림</h1>
+    <div class="gallery-container">
+      <div class="image-container">
+        <img src="photoshop1.jpeg" alt="photoshop1" />
+      </div>
+      <div class="image-container">
+        <img src="photoshop2.jpeg" alt="photoshop2" />
+      </div>
+      <div class="image-container">
+        <img src="photoshop3.jpeg" alt="photoshop3" />
+      </div>
+      <div class="image-container">
+        <img src="photoshop4.jpeg" alt="photoshop4" />
+      </div>
+    </div>
+  </body>
+</html>

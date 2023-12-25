@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SiEonKim's Website</title>
+    <style>
+      a {
+        border: 2px solid black;
+        background-color: white;
+        display: inline-block;
+        padding: 10px;
+        text-decoration: none;
+        color: black;
+      }
+
+      /* a 태그에 마우스 오버 시 */
+      a:hover {
+        background-color: #f0f0f0; /* 마우스 오버시 배경색 변경 */
+      }
+
+      iframe {
+        width: 100%;
+        height: 315px;
+        border: none;
+      }
+
+      @media (max-width: 600px) {
+        iframe {
+          height: 200px;
+        }
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      td {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body style="text-align: center; background-color: #222; color: #eee">
+    <header width="100%">
+      <h1>김시언의 웹 사이트 입니다</h1>
+    </header>
+    <br />
+    <br />
+    <table id="main_table" width="100%" border="1">
+      <tr>
+        <td width="200">소속</td>
+        <td width="400">
+          중앙대학교 예술대학 글로벌예술학부 게임콘텐츠 애니메이션
+        </td>
+      </tr>
+      <tr>
+        <td>전화번호</td>
+        <td>010-8445-3038</td>
+      </tr>
+      <tr>
+        <td>이메일</td>
+        <td>mamrove369@naver.com</td>
+      </tr>
+    </table>
+    <br />
+    <br />
+    <footer>
+      <table width="100%">
+        <tr>
+          <td width="50%">
+            <a href="sub1.html">
+              <img
+                src="./picture1.jpeg"
+                alt="picture1"
+                width="50"
+                height="50"
+              />
+              <p>그림</p>
+            </a>
+          </td>
+          <td width="50%">
+            <a href="sub2.html">
+              <img
+                src="./photoshop1.jpeg"
+                alt="picture1"
+                width="50"
+                height="50"
+              />
+              <p>포토샵</p>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td width="50%">
+            <iframe
+              width="420"
+              height="315"
+              src="https://www.youtube.com/embed/pSUydWEqKwE?si=WqhyclM-rhY9n3Xl"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <p>좋아하는 음악</p>
+          </td>
+          <td width="50%">
+            <!-- 구글 지도 iframe -->
+            <iframe
+              width="420"
+              height="315"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.107116897354!2d126.95467232520262!3d37.5053916776329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca1d92794f4c7%3A0x9fec72e6f727c7e4!2z7KSR7JWZ64yA7ZWZ6rWQIOyEnOyauOy6oO2NvOyKpA!5e0!3m2!1sko!2skr!4v1703512794683!5m2!1sko!2skr"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <p>좋아하는 장소</p>
+          </td>
+        </tr>
+      </table>
+    </footer>
+  </body>
+</html>
